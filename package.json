@@ -9,5 +9,8 @@
   "devDependencies": {
     "@zeebats/eslint-config": "1.0.2",
     "nuxt3": "3.0.0-27338323.1e98259"
+  },
+  "dependencies": {
+    "open-graph": "0.2.6"
   }
 }
