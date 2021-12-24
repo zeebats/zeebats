@@ -1,0 +1,10 @@
+# System
+.DS_Store
+
+# NPM
+node_modules
+
+# Nuxt Build
+.nuxt
+.output
+nuxt.d.ts

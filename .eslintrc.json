@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@zeebats/eslint-config/vue",
+    "@zeebats/eslint-config/typescript"
+  ]
+}

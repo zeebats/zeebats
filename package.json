@@ -1,0 +1,13 @@
+{
+  "name": "zeebats",
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@zeebats/eslint-config": "1.0.2",
+    "nuxt3": "3.0.0-27338323.1e98259"
+  }
+}
