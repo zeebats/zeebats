@@ -1,12 +1,17 @@
-import og from 'open-graph';
+import ogs from 'open-graph-scraper';
 
 const fetchURL = url => new Promise((resolve, reject) => {
-    og(url, (error, meta) => {
+    ogs({
+        url,
+        headers: {
+            'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)',
+        },
+    }, (error, result) => {
         if (error) {
-            reject(error);
+            reject(result);
         }
 
-        resolve(meta);
+        resolve(result);
     });
 });
 
