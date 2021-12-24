@@ -12,10 +12,16 @@ const fetchURL = url => new Promise((resolve, reject) => {
 
 export const handler = ({ queryStringParameters }) => fetchURL(queryStringParameters.url)
     .then(data => ({
-        statusCode: 200,
         body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        statusCode: 200,
     }))
     .catch(error => ({
-        statusCode: 422,
         body: JSON.stringify(error),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        statusCode: 422,
     }));
